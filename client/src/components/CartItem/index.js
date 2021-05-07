@@ -1,5 +1,7 @@
 import React from 'react';
-import { useStoreContext } from '../../utils/GlobalState';
+// commented out in favor of redux logic
+//import { useStoreContext } from '../../utils/GlobalState';
+import { useDispatch, useSelector } from 'react-redux';
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from '../../utils/actions';
 import { idbPromise } from "../../utils/helpers";
 
@@ -11,8 +13,13 @@ const CartItem = ({ item }) => {
     function from the useStoreContext Hook,
     because the CartItem component has no 
     need to read state. 
-    */  
-    const [, dispatch] = useStoreContext();
+    */
+    // commented out in favor of redux logic  
+    //const [, dispatch] = useStoreContext();
+    const state = useSelector((state) => {
+      return state
+    });
+    const dispatch = useDispatch();
 
     const removeFromCart = item => {
       dispatch({

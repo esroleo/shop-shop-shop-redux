@@ -4,7 +4,9 @@ import { useQuery } from '@apollo/react-hooks';
 import { QUERY_CATEGORIES } from "../../utils/queries";
 
 // Provider Global Store import
-import { useStoreContext } from "../../utils/GlobalState";
+// commented out in favor of redux logic
+//import { useStoreContext } from "../../utils/GlobalState";
+import { useDispatch, useSelector } from 'react-redux';
 
 // Import IndexDB helper which will allow the app to talk
 // to the database
@@ -20,10 +22,14 @@ function CategoryMenu({}) {
   //const { data: categoryData } = useQuery(QUERY_CATEGORIES);
   //const categories = categoryData?.categories || [];
 
-  const [state, dispatch] = useStoreContext();
+  // commented out in favor of redux logic
+  //const [state, dispatch] = useStoreContext();
+  const state = useSelector((state) => {
+    return state
+  });
+  const dispatch = useDispatch();
 
   const { categories } = state;
-
   // loading will be used for offline capabilities
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 

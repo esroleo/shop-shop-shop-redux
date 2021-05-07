@@ -4,9 +4,9 @@ import { idbPromise } from "../../utils/helpers";
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import './style.css';
-import { useStoreContext } from '../../utils/GlobalState';
-//import { TOGGLE_CART } from '../../utils/actions';
-
+//commented out in favor of redux logic
+//import { useStoreContext } from '../../utils/GlobalState';
+import { useDispatch, useSelector } from 'react-redux';
 // stripe checkout api
 // to be used as part of the button checkout process
 import { loadStripe } from "@stripe/stripe-js";
@@ -25,7 +25,15 @@ const Cart = () => {
   action. In the Cart functional component, write the following code:
   */
 
-  const [state, dispatch] = useStoreContext();
+  // Commented out in favor of redux logic
+  //const [state, dispatch] = useStoreContext();
+
+  const state = useSelector((state) => {
+    return state
+  });
+
+  const dispatch = useDispatch();
+
   // using lazyQuery to be used as part of the checkout function
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 

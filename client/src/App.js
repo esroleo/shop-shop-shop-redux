@@ -13,11 +13,12 @@ import Success from "./pages/Sucess";
 // redux hook and store
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import OrderHistory from "./pages/OrderHistory";
 
 // custom React Hook
 // commented out in favor of redux
 // import { StoreProvider } from "./utils/GlobalState";
-// import OrderHistory from "./pages/OrderHistory";
+
 
 
 
