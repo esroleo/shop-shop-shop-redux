@@ -10,10 +10,14 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
 import Success from "./pages/Sucess";
+// redux hook and store
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 // custom React Hook
-import { StoreProvider } from "./utils/GlobalState";
-import OrderHistory from "./pages/OrderHistory";
+// commented out in favor of redux
+// import { StoreProvider } from "./utils/GlobalState";
+// import OrderHistory from "./pages/OrderHistory";
 
 
 
@@ -35,7 +39,8 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <StoreProvider>
+          {/*<StoreProvider>*/}
+          <Provider store={store}>
             <Nav />
             <Switch>
               <Route exact path="/" component={Home} />
@@ -47,7 +52,8 @@ function App() {
               <Route component={NoMatch} />
               
             </Switch>
-          </StoreProvider>
+          </Provider>
+          {/*</StoreProvider>*/}
         </div>
       </Router>
     </ApolloProvider>

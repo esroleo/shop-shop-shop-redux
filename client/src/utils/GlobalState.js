@@ -1,9 +1,14 @@
+// Removed in favor of redux
+
+/*
+
 import React, { createContext, useContext } from "react";
 import { useProductReducer } from './reducers';
 
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
+/*
 
 /*
 Create a custom provider
@@ -25,6 +30,7 @@ include {...props} in our returning <Provider> component,
 nothing on the page would be rendered!
 */
 
+/*
 const StoreProvider = ({ value = [], ...props }) => {
     const [state, dispatch] = useProductReducer({
       products: [],
@@ -38,12 +44,17 @@ const StoreProvider = ({ value = [], ...props }) => {
     return <Provider value={[state, dispatch]} {...props} />;
   };
 
+*/
+
 /*Hook to be used by the components that actually need 
 the data our <StoreProvider> will be providing
 */
 
+/*
 const useStoreContext = () => {
     return useContext(StoreContext);
 };
 
 export { StoreProvider, useStoreContext };
+
+*/
