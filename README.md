@@ -28,7 +28,7 @@ This is a full stack web application that was built using REACT. Application was
 
 ### Open your favorite web browser and enter the following web address to start using the website.
 
-https://esroleo-shop-shop-redux.herokuapp.com/
+https://esroleo-redux-shop-shop.herokuapp.com/
 
 
 <a name="usage"></a>
