@@ -17,7 +17,7 @@
 <a name="desc"></a>
 ## 1. Description
 
-This is a full stack web application that was built using REACT. Application was migrated from REACT global state to Redux state.
+This is a full stack e-commerce web application that was built using REACT. Application was migrated from REACT global state to Redux state.
 
 ### Major tech snapshot
 
@@ -50,43 +50,9 @@ If you are still interested in running the application you would need to do the 
 
 ### Application is both desktop and mobile friendly.
 
-### Main Page
+### Walkthrough video
 
-![step](./read-me-images/main-page-desktop.JPG?raw=true "main-page-desktop.JPG")
-
-![step](./read-me-images//main-page-small-device.JPG?raw=true "main-page-small-device.JPG")
-
-### Main Page Nav Bar
-
-![step](./read-me-images/main-page-desktop-nav-bar.JPG?raw=true "main-page-desktop-nav-bar.JPG")
-
-![step](./read-me-images/main-page-small-device-nav-bar.JPG?raw=true "main-page-small-device-nav-bar.JPG")
-
-### Portfolio
-
-![step](./read-me-images/portfolio-smaller-device.JPG?raw=true "portfolio-smaller-device.JPG")
-
-
-### Resume
-
-You can also download my resume by clicking on the download resume. If you get a network error, it could be a firewall issue.
-Please feel free to contact me and I will provide it to you. 
-
-![step](./read-me-images/resume-smaller-device.JPG?raw=true "resume-smaller-device.JPG")
-
-
-### Contact 
-
-![step](./read-me-images/contact-smaller-device.JPG?raw=true "contact-smaller-device.JPG")
-
-
-### Contact Validation
-
-![step](./read-me-images/contact-validation-name.JPG?raw=true "contact-validation-name.JPG")
-
-![step](./read-me-images/contact-validation-email.JPG?raw=true "contact-validation-email.JPG")
-
-![step](./read-me-images/contact-validation-description.JPG?raw=true "contact-validation-description.JPG")
+![step](./read-me-images/shop-shop.gif?raw=true "shop-shop.gif")
 
 <a name="credits"></a>
 ## 5. Credits
@@ -103,6 +69,7 @@ mit
 
 ### npm install command will install javascript dependencies
 
+(at root directory run): 
 npm i
 
 <a name="commandTest"></a>
